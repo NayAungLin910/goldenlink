@@ -8,7 +8,7 @@
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "gl",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -91,5 +91,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "8360d2b4-16c1-4d79-80b3-c22bb9b1e2bf"
   }
 }

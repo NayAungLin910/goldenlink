@@ -1,0 +1,30 @@
+<nav>
+  <i class="bi bi-bar-chart-steps checkbtn" (click)="toggleNavbar()"></i>
+  <label class="logo"> Golden Link </label>
+  <ul class="navLinks" [ngStyle]="{ left: show ? '0' : '-100%' }">
+    <li>
+      <a
+        [ngClass]="{ active: currentRoute('/') }"
+        routerLink=""
+        (click)="toggleNavbar()"
+        >Home</a
+      >
+    </li>
+    <li>
+      <a
+        [ngClass]="{ active: currentRoute('/about') }"
+        routerLink="/about"
+        (click)="toggleNavbar()"
+        >About</a
+      >
+    </li>
+    <li>
+      <a
+        [ngClass]="{ active: currentRoute('/contact') }"
+        routerLink="/contact"
+        (click)="toggleNavbar()"
+        >Contact</a
+      >
+    </li>
+  </ul>
+</nav>
