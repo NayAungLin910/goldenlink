@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { SlideInterface } from '../imageSlider/types/slides.interface';
+import { ImageSliderModule } from '../imageSlider/imageSlider.module';
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [],
+  imports: [ImageSliderModule],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.css'
 })
@@ -14,6 +15,6 @@ export class MainContentComponent {
     { url: '/assets/simple_house.webp', title: 'simple-house'},
     { url: '/assets/simple_room.webp', title: 'simple-room'},
     { url: '/assets/simple_table.webp', title: 'simple-table'},
-    { url: '/assets/simple_dogo.webp', title: 'simple-dogo'},
+    { url: '/assets/small_dogo.webp', title: 'simple-dogo'},
   ]
 }
