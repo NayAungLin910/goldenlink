@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <div
+    [ngClass]="{'content-wrapper' : true, 'content-right' : isOdd}"
+    *ngFor="let aosContent of aosContents; let isEven = even; let isOdd = odd"
+    [attr.data-aos]="isEven ? 'fade-left' :  'fade-right'"
+  >
+    <img
+      class="content-image"
+      [src]="aosContent.imageUrl"
+      [alt]="aosContent.imageName"
+    />
+    <div>
+      <h2 class="content-title">{{ aosContent.title }}</h2>
+      <p class="content-text">{{ aosContent.content }}</p>
+    </div>
+  </div>
+</div>

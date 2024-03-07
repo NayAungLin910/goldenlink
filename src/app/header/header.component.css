@@ -1,16 +1,9 @@
 nav {
-    background: #D83763;
+    background: #F3F3F3;
     height: 80px;
     width: 100%;
     z-index: 10;
-}
-
-label.logo {
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 20px;
-    font-weight: bold;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
 
 nav ul {
@@ -25,23 +18,24 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: black;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
 }
 
-a.active,
-a:hover {
-    background: #AD1E45;
+nav ul li a.active,
+nav ul li a:hover {
+    background: black;
+    color:white;
     transition: .5s;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
 
 .checkbtn {
     font-size: 30px;
-    color: white;
+    color: black;
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -51,6 +45,11 @@ a:hover {
 
 #check {
     display: none;
+}
+
+.logoImage{
+    display: inline-block;
+    width: 150px;
 }
 
 @media (max-width: 952px) {
@@ -78,7 +77,7 @@ a:hover {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #841836;
+        background: #DEDEDE;
         top: 80px;
         left: -100%;
         text-align: center;
@@ -95,7 +94,7 @@ a:hover {
     nav ul li a.active,
     nav ul li a:active {
         background: none;
-        color: #EE1D57;
+        color: blue;
         box-shadow: none;
     }
 }

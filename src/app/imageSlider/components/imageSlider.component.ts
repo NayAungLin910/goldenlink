@@ -28,8 +28,4 @@ export class ImageSldierComponent {
   getCurrentSlideUrl(): string {
     return `url('${this.slides[this.currentIndex].url}')`;
   }
-
-  getCurrentSlideUrl2(): string {
-    return `${this.slides[this.currentIndex].url}`;
-  }
 }

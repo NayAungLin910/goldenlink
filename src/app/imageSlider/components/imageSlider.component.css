@@ -18,7 +18,7 @@
   top: 50%;
   transform: translate(0, -50%);
   right: 32px;
-  font-size: 45px;
+  font-size: 100px;
   color: #fff;
   z-index: 1;
   cursor: pointer;
@@ -29,7 +29,7 @@
   top: 50%;
   transform: translate(0, -50%);
   left: 32px;
-  font-size: 45px;
+  font-size: 100px;
   color: #fff;
   z-index: 1;
   cursor: pointer;
@@ -49,4 +49,10 @@
   margin: 0 3px;
   cursor: pointer;
   font-size: 20px;
+}
+
+@media (max-width: 858px) {
+  .leftArrow, .rightArrow {
+    font-size: 70px;
+  }
 }
