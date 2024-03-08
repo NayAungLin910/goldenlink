@@ -1,1 +1,45 @@
-<p>footer works!</p>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h3>Additional Information</h3>
+        <ul>
+          <li>
+            <a [ngClass]="{ 'active-link': currentRoute('/') }" routerLink=""
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              [ngClass]="{ 'active-link': currentRoute('/about') }"
+              routerLink="/about"
+              >about us</a
+            >
+          </li>
+          <li>
+            <a
+              [ngClass]="{ 'active-link': currentRoute('/our-services') }"
+              routerLink="/our-services"
+              >our services</a
+            >
+          </li>
+          <li>
+            <a
+              [ngClass]="{ 'active-link': currentRoute('/contact') }"
+              routerLink="/contact"
+              >contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=100076045641732"
+            ><i class="bi bi-facebook"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

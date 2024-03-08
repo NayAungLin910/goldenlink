@@ -30,5 +30,13 @@
         >Contact</a
       >
     </li>
+    <li>
+      <a
+        [ngClass]="{ active: currentRoute('/our-services') }"
+        routerLink="/our-services"
+        (click)="toggleNavbar()"
+        >Our Services</a
+      >
+    </li>
   </ul>
 </nav>
