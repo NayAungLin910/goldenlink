@@ -50,6 +50,7 @@ nav ul li a:hover {
 .logoImage{
     display: inline-block;
     width: 150px;
+    padding: 10px;
 }
 
 @media (max-width: 952px) {

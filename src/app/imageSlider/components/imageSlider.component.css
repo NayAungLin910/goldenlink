@@ -1,3 +1,7 @@
+.parent-wrapper {
+  margin: 10px 0;
+}
+
 .slider-wrapper {
   width: 100%;
   max-width: 600px;
@@ -51,8 +55,19 @@
   font-size: 20px;
 }
 
+.imageInfo-wrapper {
+  padding: 18px 0;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
 @media (max-width: 858px) {
   .leftArrow, .rightArrow {
     font-size: 70px;
+  }
+
+  .imageInfo-wrapper {
+    width: 90%;
   }
 }

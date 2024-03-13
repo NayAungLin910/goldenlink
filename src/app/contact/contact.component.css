@@ -1,9 +1,41 @@
 .card {
-    background-color: linen;
+    background-color: #F3F3F3;
     width: auto;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 20px auto;
     width: 50%;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    box-shadow: 0 10px 10px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     padding: 10px;
+}
+
+.map-container {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.contact-icon {
+    font-size: 35px;
+}
+
+.map-iframe {
+    display: block;
+    width: 100%;
+}
+
+.icon-td {
+    width: 100px;
+}
+
+.contact-info-td {
+    font-size: 15px;
+}
+
+@media (max-width: 958px) {
+    .card {
+        width: 90%;
+    }
+    
+    .icon-td {
+        width: 50px;
+    }
 }

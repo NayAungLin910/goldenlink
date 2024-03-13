@@ -21,11 +21,17 @@ export class ImageSldierComponent {
 
   goToPrevious(): void {
     const isLastSlide = this.currentIndex === 0;
-    const newIndex = isLastSlide ? this.slides.length - 1 : this.currentIndex - 1;
+    const newIndex = isLastSlide
+      ? this.slides.length - 1
+      : this.currentIndex - 1;
     this.currentIndex = newIndex;
   }
 
   getCurrentSlideUrl(): string {
     return `url('${this.slides[this.currentIndex].url}')`;
+  }
+
+  getCurrentImageInfo(): string {
+    return this.slides[this.currentIndex].imageText;
   }
 }
