@@ -14,6 +14,9 @@ import { aosContent } from '../aos-fade-content/types/aosContent.interface';
   styleUrl: './main-content.component.css',
 })
 export class MainContentComponent implements OnInit {
+
+  mainTitle: string = "Making bright youths' dreams come true!";
+
   slides: SlideInterface[] = [
     {
       url: '/assets/images/subaru-seminar/gl and subaru.webp',
@@ -34,24 +37,24 @@ export class MainContentComponent implements OnInit {
         'SUBARU school officials and Golden Link Director Ms. Thin Htet Htet Aung during the school promotion seminar',
     },
     {
-      url: '/assets/images/subaru-seminar/sensei emiy seminar.webp',
-      title: 'simple-table',
-      imageText: 'This iamge is interesting!',
+      url: '/assets/images/subaru-seminar/sensei emily seminar.webp',
+      title: 'Sensei Emily giving speech.',
+      imageText: 'Ms. Thin Htet Htet Aung, the founder of Golden Link, giving speech towards the students!',
     },
     {
-      url: '/assets/small_dogo.webp',
-      title: 'simple-dogo',
-      imageText: 'This iamge is interesting!',
+      url: '/assets/images/subaru-seminar/sensei thura seminar.webp',
+      title: 'Sensei Thura giving speech.',
+      imageText: 'Mr. Thura, the founder of Golden Link, giving speech towards the students!',
     },
   ];
 
   aosContents: aosContent[] = [
     {
-      imageUrl: '/assets/planty.webp',
-      imageName: 'plenty',
+      imageUrl: '/assets/images/subaru-seminar/teaching-youths.webp',
+      imageName: 'Teaching Youths',
       content:
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, aliquam, non qui eius aspernatur velit dolorem animi, magni illo porro quis atque nostrum. Aliquid molestiae totam pariatur. Quidem, accusantium officiis?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, aliquam, non qui eius aspernatur velit dolorem animi, magni illo porro quis atque nostrum. Aliquid molestiae totam pariatur. Quidem, accusantium officiis?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, aliquam, non qui eius aspernatur velit dolorem animi, magni illo porro quis atque nostrum. Aliquid molestiae totam pariatur. Quidem, accusantium officiis?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, aliquam, non qui eius aspernatur velit dolorem animi, magni illo porro quis atque nostrum. Aliquid molestiae totam pariatur. Quidem, accusantium officiis?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, aliquam, non qui eius aspernatur velit dolorem animi, magni illo porro quis atque nostrum. Aliquid molestiae totam pariatur. Quidem, accusantium officiis?',
-      title: 'Pleny pleanty',
+        'Golden Link Japanese & Other Languages Academy was found in 2023 by .... We are now helping students achieve their derams of studying abroad in Jpan and furthering their education through colleges and universities. Many of our students are already in Japan and having the time of their life by studying Jpaanese but also working.',
+      title: 'About Gusto',
     },
     {
       imageUrl: '/assets/planty.webp',
