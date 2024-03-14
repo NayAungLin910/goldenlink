@@ -54,7 +54,7 @@ export class MainContentComponent implements OnInit {
       imageName: 'Teaching Youths',
       content:
         'Golden Link Japanese & Other Languages Academy was found in 2023 by .... We are now helping students achieve their derams of studying abroad in Jpan and furthering their education through colleges and universities. Many of our students are already in Japan and having the time of their life by studying Jpaanese but also working.',
-      title: 'About Gusto',
+      title: 'About Golden Link',
     },
     {
       imageUrl: '/assets/planty.webp',
