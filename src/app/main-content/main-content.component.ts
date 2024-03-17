@@ -68,6 +68,10 @@ export class MainContentComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    AOS.init();
+    document.onreadystatechange = () => {
+      if (document.readyState == 'complete') {
+        AOS.init();
+      }
+    };
   }
 }
