@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import AOS from 'aos';
+import * as AOS from 'aos';
 import { aosContent } from './types/aosContent.interface';
 import { CommonModule } from '@angular/common';
 

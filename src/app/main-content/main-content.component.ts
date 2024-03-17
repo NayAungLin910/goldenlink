@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { SlideInterface } from '../imageSlider/types/slides.interface';
 import { ImageSliderModule } from '../imageSlider/imageSlider.module';
 import { AosFadeContentComponent } from '../aos-fade-content/aos-fade-content.component';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { aosContent } from '../aos-fade-content/types/aosContent.interface';
 
@@ -14,7 +13,6 @@ import { aosContent } from '../aos-fade-content/types/aosContent.interface';
   styleUrl: './main-content.component.css',
 })
 export class MainContentComponent implements OnInit {
-
   mainTitle: string = "Making bright youths' dreams come true!";
 
   slides: SlideInterface[] = [
@@ -39,12 +37,14 @@ export class MainContentComponent implements OnInit {
     {
       url: '/assets/images/subaru-seminar/sensei emily seminar.webp',
       title: 'Sensei Emily giving speech.',
-      imageText: 'Ms. Thin Htet Htet Aung, the founder of Golden Link, giving speech towards the students!',
+      imageText:
+        'Ms. Thin Htet Htet Aung, the founder of Golden Link, giving speech towards the students!',
     },
     {
       url: '/assets/images/subaru-seminar/sensei thura seminar.webp',
       title: 'Sensei Thura giving speech.',
-      imageText: 'Mr. Thura, the founder of Golden Link, giving speech towards the students!',
+      imageText:
+        'Mr. Thura, the founder of Golden Link, giving speech towards the students!',
     },
   ];
 
@@ -68,10 +68,5 @@ export class MainContentComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    document.onreadystatechange = () => {
-      if (document.readyState == 'complete') {
-        AOS.init();
-      }
-    };
   }
 }
