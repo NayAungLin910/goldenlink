@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { SlideInterface } from '../types/slides.interface';
-
 @Component({
   selector: 'gl-image-slider',
   templateUrl: './imageSlider.component.html',
@@ -28,10 +27,12 @@ export class ImageSldierComponent {
   }
 
   getCurrentSlideUrl(): string {
-    return `url('${this.slides[this.currentIndex].url}')`;
+    return this.slides[this.currentIndex].url;
   }
 
   getCurrentImageInfo(): string {
     return this.slides[this.currentIndex].imageText;
   }
+
 }
+

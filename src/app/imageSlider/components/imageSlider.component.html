@@ -5,7 +5,7 @@
       <div class="rightArrow" (click)="goToNext()">&#8250;</div>
       <div
         class="slide"
-        [ngStyle]="{ 'background-image': getCurrentSlideUrl() }"
+        [lazyLoad]="getCurrentSlideUrl()"
       ></div>
     </div>
   </div>
