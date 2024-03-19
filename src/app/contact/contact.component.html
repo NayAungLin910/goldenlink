@@ -3,9 +3,14 @@
     <table>
       <tr *ngFor="let contactInfo of contactInfos">
         <td class="icon-td"><i class="contact-icon" [ngClass]="contactInfo.iconClass"></i></td>
-        <td class="contact-info-td">
-          {{ contactInfo.info }}
+        <td *ngIf="contactInfo.link; else elseBlock">
+          <a target="_blank" href="{{ contactInfo.link }}">
+            {{ contactInfo.info }}
+          </a>
         </td>
+        <ng-template #elseBlock class="contact-info-td">
+          {{ contactInfo.info }}
+        </ng-template>
       </tr>
     </table>
     <div class="map-container">

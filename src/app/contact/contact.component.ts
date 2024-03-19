@@ -25,5 +25,14 @@ export class ContactComponent {
       iconClass: 'bi bi-person-circle',
       info: 'Thin Htet Htet Aung (Training Director)',
     },
+    {
+      iconClass: 'bi bi-envelope',
+      info: 'goldenlink787@gmail.com',
+    },
+    {
+      iconClass: 'bi bi-facebook',
+      info: 'Golden LINK Japanese & Other Language Training Centre',
+      link: 'https://www.facebook.com/profile.php?id=100076045641732',
+    }
   ];
 }

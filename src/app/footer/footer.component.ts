@@ -12,8 +12,7 @@ import { AppRoutingModule } from '../../app.routing.module';
 })
 export class FooterComponent {
   constructor(private router: Router) {}
-
-  // checks if the route provided is the same with the current route
+  
   currentRoute(route: string) {
     return this.router.url === route;
   }

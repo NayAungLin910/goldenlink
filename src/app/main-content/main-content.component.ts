@@ -13,7 +13,7 @@ import { aosContent } from '../aos-fade-content/types/aosContent.interface';
   styleUrl: './main-content.component.css',
 })
 export class MainContentComponent implements OnInit {
-  mainTitle: string = "Making bright youths' dreams come true!";
+  mainTitle: string = "🌟Making bright youths' dreams come true!🌟";
 
   slides: SlideInterface[] = [
     {
@@ -53,16 +53,22 @@ export class MainContentComponent implements OnInit {
       imageUrl: '/assets/images/subaru-seminar/teaching-youths.webp',
       imageName: 'Teaching Youths',
       content:
-        'Golden Link Japanese & Other Languages Academy was found in 2023 by .... We are now helping students achieve their derams of studying abroad in Jpan and furthering their education through colleges and universities. Many of our students are already in Japan and having the time of their life by studying Jpaanese but also working.',
-      title: 'About Golden Link',
+        'Golden Link Japanese & Other Languages Academy was found in 2023 by Mrs.Thin Htet Htet Aung and Mr.Thura Aung. The academy is now helping students achieve their derams of studying abroad in Japan and furthering their 🎓education through colleges and universities. Many of our students are already in 🗾Japan and having the time of their life by studying Japanese while also working.',
+      title: 'About ✨Golden Link',
     },
     {
-      imageUrl: '/assets/planty.webp',
-      imageName: 'plenty',
+      imageUrl: '/assets/images/job-agency-visit/job-agency-agents-visiting-golden-link.webp',
+      imageName: 'Job Agency Visiting Golden Link Class',
       content:
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, aliquam, non qui eius aspernatur velit dolorem animi, magni illo porro quis atque nostrum. Aliquid molestiae totam pariatur. Quidem, accusantium officiis?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, aliquam, non qui eius aspernatur velit dolorem animi, magni illo porro quis atque nostrum. Aliquid molestiae totam pariatur. Quidem, accusantium officiis?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, aliquam, non qui eius aspernatur velit dolorem animi, magni illo porro quis atque nostrum. Aliquid molestiae totam pariatur. Quidem, accusantium officiis?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, aliquam, non qui eius aspernatur velit dolorem animi, magni illo porro quis atque nostrum. Aliquid molestiae totam pariatur. Quidem, accusantium officiis?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, aliquam, non qui eius aspernatur velit dolorem animi, magni illo porro quis atque nostrum. Aliquid molestiae totam pariatur. Quidem, accusantium officiis?',
-      title: 'Pleny pleanty',
+        'We teach our 👨‍🎓students not only basic japanese language lessons but also prepare for 🕵️‍♂️interviews for both school and job. We provide our students with chances to have interviews from various japanese language schools as well as job oppotunities of both tokutei and work visas.',
+      title: 'Many ✨Oppotunities for Students!',
     },
+    {
+      imageUrl: '/assets/images/from-japan/students-in-japan-and-sensei-emily.webp',
+      imageName: 'Students in Japan',
+      content: 'There are already many students attending various Japanese language schools in Japan, who previously studied in ✨Golden Link.',
+      title: 'Already Many Students in 🗾Japan!'
+    }
   ];
 
   constructor() {}

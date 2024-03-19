@@ -8,6 +8,7 @@
     display: flex;
     gap: 15px;
     align-items: center;
+    margin: 10px 0;
 }
 
 .content-image {
@@ -15,15 +16,17 @@
     height: 100%;
     max-width: 500px;
     border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
 
 .content-text {
     text-align: justify;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .content-title {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .content-right {
