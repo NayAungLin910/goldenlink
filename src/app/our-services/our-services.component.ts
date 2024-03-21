@@ -31,7 +31,7 @@ export class OurServicesComponent {
       imageName: 'Help Students Find Tokutei and Work Visa Jobs',
       content:
         "We make sure our students willing to go to Japan with Tokutei jobs or work visa jobs find the suitable jobs they deserve. Not only we introduce them with job oppotunities, we also train them well so that they have a very high chance of passing the interview. We are proud to say that there are aleady many of our students who are currently now working in Japan!",
-      title: 'High-Quality Japanese Language Lectures!',
+      title: 'Helping Students Find Tokutei and Work Visa Jobs!',
     },
   ];
 

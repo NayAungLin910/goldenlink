@@ -2,16 +2,20 @@
   <div class="card">
     <table>
       <tr *ngFor="let contactInfo of contactInfos">
-        <td class="icon-td"><i class="contact-icon" [ngClass]="contactInfo.iconClass"></i></td>
+        <td class="icon-td">
+          <i class="contact-icon" [ngClass]="contactInfo.iconClass"></i>
+        </td>
         <td *ngIf="contactInfo.link; else elseBlock">
           <a target="_blank" href="{{ contactInfo.link }}">
             {{ contactInfo.info }}
           </a>
         </td>
-        <ng-template #elseBlock class="contact-info-td">
-          {{ contactInfo.info }}
+        <ng-template #elseBlock class="contact-info-td" >
+          <td class="contact-info-td">
+            {{ contactInfo.info }}
+          </td>
         </ng-template>
-      </tr> 
+      </tr>
     </table>
     <div class="map-container">
       <iframe
